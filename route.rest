@@ -1,0 +1,21 @@
+GET http://localhost:3001/subscribers 
+###
+GET http://localhost:3001/subscribers/15 
+###
+POST http://localhost:3001/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Personooo",
+    "subscribedToChannel": "Colty's youtube"
+}
+###
+DELETE  http://localhost:3001/subscribers/61d99fd63642fc5e9ddc1a10
+
+###
+PATCH  http://localhost:3001/subscribers/61d9a2f95ad47e37805ebdd3
+Content-Type: application/json
+
+{
+    "name": "colpy"
+}
